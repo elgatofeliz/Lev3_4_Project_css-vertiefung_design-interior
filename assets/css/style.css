@@ -1,0 +1,402 @@
+/*=== Fonts ===*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@400;500;700&family=Raleway:wght@400;500;700&family=Rampart+One&family=Roboto:wght@400;700&family=Work+Sans:wght@400;700&display=swap');
+
+/* font-family: 'Lora', serif;
+font-family: 'Work Sans', sans-serif;
+*/
+
+/*=====================================
+                General
+====================================*/            
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, label, footer>p, footer>ul>li{
+    font-family: 'Lora', serif;
+}
+
+p, nav>ul>li, form>button{
+    font-family: 'Work Sans', sans-serif;
+}
+
+p{
+    line-height: 35px;
+}
+
+body{
+    font-size: 10px;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+/*=====================================
+                Header
+====================================*/    
+
+header{
+    display: flex;
+    width: 100vw;
+}
+
+header>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+}
+
+header>div>h1{
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+header>div>h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-top: 3vh;
+}
+
+header>img{
+    width: 59vw;
+}
+
+/*=====================================
+                Nav
+====================================*/    
+
+nav{
+    background: #2e2e2e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 0;
+    position: sticky;
+    top: 0;
+}
+
+nav>img:nth-of-type(1){
+    height: 50px;
+    margin-left: 1vw;
+}
+
+nav>ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav>ul>li>a{
+    font-size: 1.2rem;
+    margin: 0 6vw;
+    text-decoration: none;
+    color: white;
+}
+
+nav>a>img{
+    display: none;
+}
+
+nav>div{
+    left: 0;
+    top: 0;
+}
+
+nav>div>ul{
+    display: none;
+    background: #2e2e2e;
+    border: 2px solid #333;
+    border-radius: 10px;
+    list-style: none;
+}
+
+nav>div>li{
+    padding: 2vh 5vw;
+}
+
+nav>div>ul>li>a{
+    color: white;
+    text-decoration: none;
+}
+
+.showMenu{
+    display: inline-block;
+}
+
+/*=====================================
+                Main
+====================================*/  
+
+/*=== Section 1 - Our Story ===*/
+
+main>section:nth-of-type(1){
+    background: #2e2e2e;
+    display: flex;
+}
+
+main>section:nth-of-type(1)>img{
+    padding: 15vh 0;
+    width: 55vw;
+}
+
+main>section:nth-of-type(1)>div{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3vw;
+    width: 45vw;
+}
+
+main>section:nth-of-type(1)>div>p{
+    padding-top: 3vh;
+    font-size: 1.2rem;
+    line-height: 40px;
+}
+
+/*=== Section 2 - Featured ===*/
+
+main>section:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main>section:nth-of-type(2)>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+main>section:nth-of-type(2)>div>h2{
+    padding-top: 15vh;
+}
+
+main>section:nth-of-type(2)>div>p{
+    width: 39%;
+    padding: 1vh 0 8vh 0;
+    font-size: 1.2rem;
+    color: #4d4d4d;
+    word-spacing: 7px;
+}
+
+main>section:nth-of-type(2)>article{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+main>section:nth-of-type(2)>article>figure{
+    width: 28%;
+}
+
+main>section:nth-of-type(2)>article>figure>img{
+    width: 100%;
+}
+
+
+article>figure>figcaption{
+    color: #757575;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+section:nth-of-type(2)>iframe{
+    margin: 5vh 0 20vh 0;
+}
+
+
+section:nth-of-type(2)>div{
+    margin: 5vh 0 15vh 0;
+    width: 30%;
+    height: 18%;
+}
+
+/*=== Section 3 - Get in touch ===*/
+
+main>section:nth-of-type(3){
+    background: #2e2e2e;
+    display: flex;
+}
+
+main>section:nth-of-type(3)>div{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 20vh 0 20vh 5vw;
+    width: 45%;
+}
+
+main>section:nth-of-type(3)>div>p{
+    font-size: 1.4rem;
+    padding-top: 4vh;
+}
+
+main>section>form{
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15vw;
+}
+
+main>section>form>input{
+    line-height: 22px;
+}
+
+#inputMessage{
+    padding-bottom: 1.5vh;
+}
+
+main>section>form>label{
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 3vh;
+}
+
+main>section>form>button{
+    margin-top: 3vh;
+    width: 15%;
+    padding: 1%;
+}
+
+
+/*=====================================
+                Footer
+====================================*/   
+
+footer{
+    background: #1d2c2f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vh 2vw;
+}
+
+footer>ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer>ul>li{
+    padding-left: 1vw;
+}
+
+footer>p, li{
+    font-size: 1.2rem;
+}
+
+
+/*=====================================
+            Media Query
+====================================*/   
+
+@media only screen and (max-width: 600px) {
+    header, main>section:nth-of-type(1), main>section:nth-of-type(2), main>section:nth-of-type(3),main>section:nth-of-type(2)>article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header>div, 
+    header>img {
+        width: 100%;
+    }
+
+    main>section:nth-of-type(1)>div, 
+    main>section:nth-of-type(1)>img,
+    main>section:nth-of-type(2)>div, 
+    main>section:nth-of-type(2)>div>p,
+    main>section:nth-of-type(2)>article>figure,
+    main>section:nth-of-type(2)>iframe,
+    main>section:nth-of-type(3)>div,
+    main>section:nth-of-type(3)>form {
+        width: 95%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /*=== Header ===*/
+
+    header>div>h3{
+        padding-bottom: 5vh;
+    }
+
+    /*=== NAV ===*/
+
+    nav>ul{
+        display: none;
+    }
+
+    nav>a>img{
+        display: inline-block;
+        width: 40px;
+        background: white;
+        border-radius: 3px;
+        margin-right: 2vw;
+    }
+
+    /*=== Main ===*/
+    /*== Section 1 - Our Story ===*/
+
+    main>section:nth-of-type(1)>img{
+        padding: 5vh 0;
+    }
+
+    /*== Section 2 - Featured ===*/
+
+    main>section:nth-of-type(2)>div>h2{
+        padding-top: 5vh;
+    }
+
+    main>section:nth-of-type(2)>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2vh;
+    }
+
+    main>section:nth-of-type(2)>article>figure{
+        margin-bottom: 3vh;
+    }
+
+    section:nth-of-type(2)>iframe{
+        margin: 5vh 0;
+        height: 325px;
+    }
+
+    /*== Section 3 - Get in touch ===*/
+
+    main>section:nth-of-type(3)>div{
+        padding: 5vh 0;
+    }
+
+    main>section:nth-of-type(3)>form{
+        padding-bottom: 5vh;
+    }
+
+    /*== Footer ===*/
+    
+    footer{
+        align-items: baseline;
+        padding-left: 10vw;
+    }
+
+    footer>ul>li{
+        padding-top: 1vh;
+    }
+}
